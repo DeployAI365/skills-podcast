@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpenClaw 十大技能介绍播客</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+            background: #000000;
+            color: #ffffff;
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+        .bg-gradient {
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: radial-gradient(ellipse at top, rgba(99, 102, 241, 0.15) 0%, transparent 50%),
+                        radial-gradient(ellipse at bottom right, rgba(16, 163, 127, 0.1) 0%, transparent 50%),
+                        #000000;
+            z-index: -1;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            border-bottom: 1px solid #333333;
+        }
+        nav .logo { font-size: 20px; font-weight: 700; }
+        nav .logo span { color: #10a37f; }
+        main { max-width: 800px; margin: 0 auto; padding: 60px 20px; }
+        .hero { text-align: center; padding: 40px 0 60px; }
+        .hero h1 {
+            font-size: 42px;
+            font-weight: 700;
+            margin-bottom: 16px;
+            background: linear-gradient(135deg, #ffffff 0%, #a78bfa 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .hero .subtitle { font-size: 18px; color: #8e8e8e; }
+        .audio-card {
+            background: linear-gradient(180deg, #1a1a1a 0%, #0a0a0a 100%);
+            border: 1px solid #333333;
+            border-radius: 16px;
+            padding: 32px;
+            margin: 40px 0;
+        }
+        .audio-card h2 {
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #8e8e8e;
+            margin-bottom: 20px;
+        }
+        audio { width: 100%; height: 48px; border-radius: 24px; }
+        .content {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid #333333;
+            border-radius: 16px;
+            padding: 40px;
+            margin-top: 40px;
+        }
+        .content h2 { font-size: 24px; margin-bottom: 24px; }
+        .skill-item {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid #333333;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 16px;
+        }
+        .skill-item h3 {
+            font-size: 18px;
+            color: #10a37f;
+            margin-bottom: 8px;
+        }
+        .skill-item p { font-size: 15px; color: #d1d5db; }
+        .rank {
+            display: inline-block;
+            background: #10a37f;
+            color: white;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 28px;
+            font-size: 14px;
+            margin-right: 10px;
+        }
+        footer {
+            text-align: center;
+            padding: 40px;
+            color: #8e8e8e;
+            font-size: 14px;
+            border-top: 1px solid #333333;
+            margin-top: 60px;
+        }
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 28px; }
+            .content { padding: 24px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-gradient"></div>
+    <nav>
+        <div class="logo">AI<span>Podcast</span></div>
+    </nav>
+    <main>
+        <div class="hero">
+            <h1>OpenClaw 十大技能</h1>
+            <p class="subtitle">AI助手技能库介绍 | 2026年3月</p>
+        </div>
+        <div class="audio-card">
+            <h2>🎧 播放音频</h2>
+            <audio controls>
+                <source src="https://deployai365-deploy-1329062606.cos.ap-guangzhou.myqcloud.com/uploads/1773765896_skills_podcast.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+        <div class="content">
+            <h2>📝 技能介绍</h2>
+            <div class="skill-item">
+                <h3><span class="rank">1</span>Feishu-Bitable 技能</h3>
+                <p>飞书多维表格的管理工具，支持创建、查询、编辑表格数据，功能非常强大。</p>
+            </div>
+            <div class="skill-item">
+                <h3><span class="rank">2</span>Feishu-Calendar 技能</h3>
+                <p>飞书日历与日程管理工具，可以创建会议、查看日程、管理参会人，是办公神器。</p>
+            </div>
+            <div class="skill-item">
+                <h3><span class="rank">3</span>Feishu-Create-Doc 技能</h3>
+                <p>一键创建飞书云文档，支持Markdown格式，非常方便。</p>
+            </div>
+            <div class="skill-item">
+                <h3><span class="rank">4</span>Feishu-Fetch-Doc 技能</h3>
+                <p>获取飞书云文档内容，返回Markdown格式，支持图片和文件处理。</p>
+            </div>
+            <div class="skill-item">
+                <h3><span class="rank">5</span>Feishu-Update-Doc 技能</h3>
+                <p>更新飞书云文档，支持追加、覆盖、插入等多种模式。</p>
+            </div>
+            <div class="skill-item">
+                <h3><span class="rank">6</span>Miaoda-Web-Search 技能</h3>
+                <p>网页搜索工具，可以快速获取互联网上的最新信息。</p>
+            </div>
+            <div class="skill-item">
+                <h3><span class="rank">7</span>Miaoda-Web-Fetch 技能</h3>
+                <p>网页抓取工具，可以提取指定网页的内容进行总结分析。</p>
+            </div>
+            <div class="skill-item">
+                <h3><span class="rank">8</span>Miaoda-Image-Understanding 技能</h3>
+                <p>图片理解工具，可以分析图片内容并给出描述。</p>
+            </div>
+            <div class="skill-item">
+                <h3><span class="rank">9</span>Miaoda-Speech-To-Text 技能</h3>
+                <p>语音转文字工具，支持多种语言的语音识别。</p>
+            </div>
+            <div class="skill-item">
+                <h3><span class="rank">10</span>Weather 技能</h3>
+                <p>天气查询工具，可以获取全球各地的天气预报。</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>🎵 语音由 AI 克隆技术生成</p>
+        <p>Powered by DeployAI</p>
+    </footer>
+</body>
+</html>
